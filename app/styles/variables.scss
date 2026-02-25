@@ -1,0 +1,255 @@
+/* Color Tokens Light Theme */
+:root,
+:root[data-theme='light'] {
+  --auricyn-elements-borderColor: theme('colors.alpha.gray.10');
+  --auricyn-elements-borderColorActive: theme('colors.accent.600');
+
+  --auricyn-elements-bg-depth-1: theme('colors.white');
+  --auricyn-elements-bg-depth-2: theme('colors.gray.50');
+  --auricyn-elements-bg-depth-3: theme('colors.gray.200');
+  --auricyn-elements-bg-depth-4: theme('colors.alpha.gray.5');
+
+  --auricyn-elements-textPrimary: theme('colors.gray.950');
+  --auricyn-elements-textSecondary: theme('colors.gray.600');
+  --auricyn-elements-textTertiary: theme('colors.gray.500');
+
+  --auricyn-elements-code-background: theme('colors.gray.100');
+  --auricyn-elements-code-text: theme('colors.gray.950');
+
+  --auricyn-elements-button-primary-background: theme('colors.alpha.accent.10');
+  --auricyn-elements-button-primary-backgroundHover: theme('colors.alpha.accent.20');
+  --auricyn-elements-button-primary-text: theme('colors.accent.500');
+
+  --auricyn-elements-button-secondary-background: theme('colors.alpha.gray.5');
+  --auricyn-elements-button-secondary-backgroundHover: theme('colors.alpha.gray.10');
+  --auricyn-elements-button-secondary-text: theme('colors.gray.950');
+
+  --auricyn-elements-button-danger-background: theme('colors.alpha.red.10');
+  --auricyn-elements-button-danger-backgroundHover: theme('colors.alpha.red.20');
+  --auricyn-elements-button-danger-text: theme('colors.red.500');
+
+  --auricyn-elements-item-contentDefault: theme('colors.alpha.gray.50');
+  --auricyn-elements-item-contentActive: theme('colors.gray.950');
+  --auricyn-elements-item-contentAccent: theme('colors.accent.700');
+  --auricyn-elements-item-contentDanger: theme('colors.red.500');
+  --auricyn-elements-item-backgroundDefault: rgba(0, 0, 0, 0);
+  --auricyn-elements-item-backgroundActive: theme('colors.alpha.gray.5');
+  --auricyn-elements-item-backgroundAccent: theme('colors.alpha.accent.10');
+  --auricyn-elements-item-backgroundDanger: theme('colors.alpha.red.10');
+
+  --auricyn-elements-loader-background: theme('colors.alpha.gray.10');
+  --auricyn-elements-loader-progress: theme('colors.accent.500');
+
+  --auricyn-elements-artifacts-background: theme('colors.white');
+  --auricyn-elements-artifacts-backgroundHover: theme('colors.alpha.gray.2');
+  --auricyn-elements-artifacts-borderColor: var(--auricyn-elements-borderColor);
+  --auricyn-elements-artifacts-inlineCode-background: theme('colors.gray.100');
+  --auricyn-elements-artifacts-inlineCode-text: var(--auricyn-elements-textPrimary);
+
+  --auricyn-elements-actions-background: theme('colors.white');
+  --auricyn-elements-actions-code-background: theme('colors.gray.800');
+
+  --auricyn-elements-messages-background: theme('colors.gray.100');
+  --auricyn-elements-messages-linkColor: theme('colors.accent.500');
+  --auricyn-elements-messages-code-background: theme('colors.gray.800');
+  --auricyn-elements-messages-inlineCode-background: theme('colors.gray.200');
+  --auricyn-elements-messages-inlineCode-text: theme('colors.gray.800');
+
+  --auricyn-elements-icon-success: theme('colors.green.500');
+  --auricyn-elements-icon-error: theme('colors.red.500');
+  --auricyn-elements-icon-primary: theme('colors.gray.950');
+  --auricyn-elements-icon-secondary: theme('colors.gray.600');
+  --auricyn-elements-icon-tertiary: theme('colors.gray.500');
+
+  --auricyn-elements-dividerColor: theme('colors.gray.100');
+
+  --auricyn-elements-prompt-background: theme('colors.alpha.white.80');
+
+  --auricyn-elements-sidebar-dropdownShadow: theme('colors.alpha.gray.10');
+  --auricyn-elements-sidebar-buttonBackgroundDefault: theme('colors.alpha.accent.10');
+  --auricyn-elements-sidebar-buttonBackgroundHover: theme('colors.alpha.accent.20');
+  --auricyn-elements-sidebar-buttonText: theme('colors.accent.700');
+
+  --auricyn-elements-preview-addressBar-background: theme('colors.gray.100');
+  --auricyn-elements-preview-addressBar-backgroundHover: theme('colors.alpha.gray.5');
+  --auricyn-elements-preview-addressBar-backgroundActive: theme('colors.white');
+  --auricyn-elements-preview-addressBar-text: var(--auricyn-elements-textSecondary);
+  --auricyn-elements-preview-addressBar-textActive: var(--auricyn-elements-textPrimary);
+
+  --auricyn-elements-terminals-background: theme('colors.white');
+  --auricyn-elements-terminals-buttonBackground: var(--auricyn-elements-bg-depth-4);
+
+  --auricyn-elements-cta-background: theme('colors.gray.100');
+  --auricyn-elements-cta-text: theme('colors.gray.950');
+
+  /* Terminal Colors */
+  --auricyn-terminal-background: var(--auricyn-elements-terminals-background);
+  --auricyn-terminal-foreground: #333333;
+  --auricyn-terminal-selection-background: #00000040;
+  --auricyn-terminal-black: #000000;
+  --auricyn-terminal-red: #cd3131;
+  --auricyn-terminal-green: #00bc00;
+  --auricyn-terminal-yellow: #949800;
+  --auricyn-terminal-blue: #0451a5;
+  --auricyn-terminal-magenta: #bc05bc;
+  --auricyn-terminal-cyan: #0598bc;
+  --auricyn-terminal-white: #555555;
+  --auricyn-terminal-brightBlack: #686868;
+  --auricyn-terminal-brightRed: #cd3131;
+  --auricyn-terminal-brightGreen: #00bc00;
+  --auricyn-terminal-brightYellow: #949800;
+  --auricyn-terminal-brightBlue: #0451a5;
+  --auricyn-terminal-brightMagenta: #bc05bc;
+  --auricyn-terminal-brightCyan: #0598bc;
+  --auricyn-terminal-brightWhite: #a5a5a5;
+  --modern-scrollbar-thumb-background: rgba(100, 100, 100, 0.3); // Example light theme color
+  --modern-scrollbar-thumb-backgroundHover: rgba(74, 74, 74, 0.8);
+}
+
+/* Color Tokens Dark Theme */
+:root,
+:root[data-theme='dark'] {
+  --auricyn-elements-borderColor: theme('colors.alpha.white.10');
+  --auricyn-elements-borderColorActive: theme('colors.accent.500');
+
+  --auricyn-elements-bg-depth-1: theme('colors.gray.950');
+  --auricyn-elements-bg-depth-2: theme('colors.gray.900');
+  --auricyn-elements-bg-depth-3: theme('colors.gray.800');
+  --auricyn-elements-bg-depth-4: theme('colors.alpha.white.5');
+
+  --auricyn-elements-textPrimary: theme('colors.white');
+  --auricyn-elements-textSecondary: theme('colors.gray.400');
+  --auricyn-elements-textTertiary: theme('colors.gray.500');
+
+  --auricyn-elements-code-background: theme('colors.gray.800');
+  --auricyn-elements-code-text: theme('colors.white');
+
+  --auricyn-elements-button-primary-background: theme('colors.alpha.accent.10');
+  --auricyn-elements-button-primary-backgroundHover: theme('colors.alpha.accent.20');
+  --auricyn-elements-button-primary-text: theme('colors.accent.500');
+
+  --auricyn-elements-button-secondary-background: theme('colors.alpha.white.5');
+  --auricyn-elements-button-secondary-backgroundHover: theme('colors.alpha.white.10');
+  --auricyn-elements-button-secondary-text: theme('colors.white');
+
+  --auricyn-elements-button-danger-background: theme('colors.alpha.red.10');
+  --auricyn-elements-button-danger-backgroundHover: theme('colors.alpha.red.20');
+  --auricyn-elements-button-danger-text: theme('colors.red.500');
+
+  --auricyn-elements-item-contentDefault: theme('colors.alpha.white.50');
+  --auricyn-elements-item-contentActive: theme('colors.white');
+  --auricyn-elements-item-contentAccent: theme('colors.accent.500');
+  --auricyn-elements-item-contentDanger: theme('colors.red.500');
+  --auricyn-elements-item-backgroundDefault: rgba(255, 255, 255, 0);
+  --auricyn-elements-item-backgroundActive: theme('colors.alpha.white.10');
+  --auricyn-elements-item-backgroundAccent: theme('colors.alpha.accent.10');
+  --auricyn-elements-item-backgroundDanger: theme('colors.alpha.red.10');
+
+  --auricyn-elements-loader-background: theme('colors.alpha.gray.10');
+  --auricyn-elements-loader-progress: theme('colors.accent.500');
+
+  --auricyn-elements-artifacts-background: theme('colors.gray.900');
+  --auricyn-elements-artifacts-backgroundHover: theme('colors.alpha.white.5');
+  --auricyn-elements-artifacts-borderColor: var(--auricyn-elements-borderColor);
+  --auricyn-elements-artifacts-inlineCode-background: theme('colors.gray.800');
+  --auricyn-elements-artifacts-inlineCode-text: theme('colors.white');
+
+  --auricyn-elements-actions-background: theme('colors.gray.900');
+  --auricyn-elements-actions-code-background: theme('colors.gray.800');
+
+  --auricyn-elements-messages-background: theme('colors.gray.800');
+  --auricyn-elements-messages-linkColor: theme('colors.accent.500');
+  --auricyn-elements-messages-code-background: theme('colors.gray.900');
+  --auricyn-elements-messages-inlineCode-background: theme('colors.gray.700');
+  --auricyn-elements-messages-inlineCode-text: var(--auricyn-elements-textPrimary);
+
+  --auricyn-elements-icon-success: theme('colors.green.400');
+  --auricyn-elements-icon-error: theme('colors.red.400');
+  --auricyn-elements-icon-primary: theme('colors.gray.950');
+  --auricyn-elements-icon-secondary: theme('colors.gray.600');
+  --auricyn-elements-icon-tertiary: theme('colors.gray.500');
+
+  --auricyn-elements-dividerColor: theme('colors.gray.100');
+
+  --auricyn-elements-prompt-background: theme('colors.alpha.gray.80');
+
+  --auricyn-elements-sidebar-dropdownShadow: theme('colors.alpha.gray.30');
+  --auricyn-elements-sidebar-buttonBackgroundDefault: theme('colors.alpha.accent.10');
+  --auricyn-elements-sidebar-buttonBackgroundHover: theme('colors.alpha.accent.20');
+  --auricyn-elements-sidebar-buttonText: theme('colors.accent.500');
+
+  --auricyn-elements-preview-addressBar-background: var(--auricyn-elements-bg-depth-1);
+  --auricyn-elements-preview-addressBar-backgroundHover: theme('colors.alpha.white.5');
+  --auricyn-elements-preview-addressBar-backgroundActive: var(--auricyn-elements-bg-depth-1);
+  --auricyn-elements-preview-addressBar-text: var(--auricyn-elements-textSecondary);
+  --auricyn-elements-preview-addressBar-textActive: var(--auricyn-elements-textPrimary);
+
+  --auricyn-elements-terminals-background: var(--auricyn-elements-bg-depth-1);
+  --auricyn-elements-terminals-buttonBackground: var(--auricyn-elements-bg-depth-3);
+
+  --auricyn-elements-cta-background: theme('colors.alpha.white.10');
+  --auricyn-elements-cta-text: theme('colors.white');
+
+  /* Terminal Colors */
+  --auricyn-terminal-background: var(--auricyn-elements-terminals-background);
+  --auricyn-terminal-foreground: #eff0eb;
+  --auricyn-terminal-selection-background: #97979b33;
+  --auricyn-terminal-black: #000000;
+  --auricyn-terminal-red: #ff5c57;
+  --auricyn-terminal-green: #5af78e;
+  --auricyn-terminal-yellow: #f3f99d;
+  --auricyn-terminal-blue: #57c7ff;
+  --auricyn-terminal-magenta: #ff6ac1;
+  --auricyn-terminal-cyan: #9aedfe;
+  --auricyn-terminal-white: #f1f1f0;
+  --auricyn-terminal-brightBlack: #686868;
+  --auricyn-terminal-brightRed: #ff5c57;
+  --auricyn-terminal-brightGreen: #5af78e;
+  --auricyn-terminal-brightYellow: #f3f99d;
+  --auricyn-terminal-brightBlue: #57c7ff;
+  --auricyn-terminal-brightMagenta: #ff6ac1;
+  --auricyn-terminal-brightCyan: #9aedfe;
+  --auricyn-terminal-brightWhite: #f1f1f0;
+  --modern-scrollbar-thumb-background: rgba(100, 100, 100, 0.3); // Example dark theme color (adjust as needed)
+  --modern-scrollbar-thumb-backgroundHover: rgba(10, 10, 10, 0.8);
+}
+
+/*
+ * Element Tokens
+ *
+ * Hierarchy: Element Token -> (Element Token | Color Tokens) -> Primitives
+ */
+:root {
+  --header-height: 54px;
+  --chat-max-width: 33rem;
+  --chat-min-width: 533px;
+  --workbench-width: min(calc(100% - var(--chat-min-width)), 2536px);
+  --workbench-inner-width: var(--workbench-width);
+  --workbench-left: calc(100% - var(--workbench-width));
+
+  /* Toasts */
+  --toastify-color-progress-success: var(--auricyn-elements-icon-success);
+  --toastify-color-progress-error: var(--auricyn-elements-icon-error);
+
+  /* Terminal */
+  --auricyn-elements-terminal-backgroundColor: var(--auricyn-terminal-background);
+  --auricyn-elements-terminal-textColor: var(--auricyn-terminal-foreground);
+  --auricyn-elements-terminal-cursorColor: var(--auricyn-terminal-foreground);
+  --auricyn-elements-terminal-selection-backgroundColor: var(--auricyn-terminal-selection-background);
+  --auricyn-elements-terminal-color-black: var(--auricyn-terminal-black);
+  --auricyn-elements-terminal-color-red: var(--auricyn-terminal-red);
+  --auricyn-elements-terminal-color-green: var(--auricyn-terminal-green);
+  --auricyn-elements-terminal-color-yellow: var(--auricyn-terminal-yellow);
+  --auricyn-elements-terminal-color-blue: var(--auricyn-terminal-blue);
+  --auricyn-elements-terminal-color-magenta: var(--auricyn-terminal-magenta);
+  --auricyn-elements-terminal-color-cyan: var(--auricyn-terminal-cyan);
+  --auricyn-elements-terminal-color-white: var(--auricyn-terminal-white);
+  --auricyn-elements-terminal-color-brightBlack: var(--auricyn-terminal-brightBlack);
+  --auricyn-elements-terminal-color-brightRed: var(--auricyn-terminal-brightRed);
+  --auricyn-elements-terminal-color-brightGreen: var(--auricyn-terminal-brightGreen);
+  --auricyn-elements-terminal-color-brightYellow: var(--auricyn-terminal-brightYellow);
+  --auricyn-elements-terminal-color-brightBlue: var(--auricyn-terminal-brightBlue);
+  --auricyn-elements-terminal-color-brightMagenta: var(--auricyn-terminal-brightMagenta);
+  --auricyn-elements-terminal-color-brightCyan: var(--auricyn-terminal-brightCyan);
+  --auricyn-elements-terminal-color-brightWhite: var(--auricyn-terminal-brightWhite);
+}

@@ -1,0 +1,135 @@
+:root {
+  --cm-backgroundColor: var(--auricyn-elements-editor-backgroundColor, var(--auricyn-elements-bg-depth-1));
+  --cm-textColor: var(--auricyn-elements-editor-textColor, var(--auricyn-elements-textPrimary));
+
+  /* Gutter */
+
+  --cm-gutter-backgroundColor: var(--auricyn-elements-editor-gutter-backgroundColor, var(--cm-backgroundColor));
+  --cm-gutter-textColor: var(--auricyn-elements-editor-gutter-textColor, var(--auricyn-elements-textSecondary));
+  --cm-gutter-activeLineTextColor: var(--auricyn-elements-editor-gutter-activeLineTextColor, var(--cm-gutter-textColor));
+
+  /* Fold Gutter */
+
+  --cm-foldGutter-textColor: var(--auricyn-elements-editor-foldGutter-textColor, var(--cm-gutter-textColor));
+  --cm-foldGutter-textColorHover: var(--auricyn-elements-editor-foldGutter-textColorHover, var(--cm-gutter-textColor));
+
+  /* Active Line */
+
+  --cm-activeLineBackgroundColor: var(--auricyn-elements-editor-activeLineBackgroundColor, rgb(224 231 235 / 30%));
+
+  /* Cursor */
+
+  --cm-cursor-width: 2px;
+  --cm-cursor-backgroundColor: var(--auricyn-elements-editor-cursorColor, var(--auricyn-elements-textSecondary));
+
+  /* Matching Brackets */
+
+  --cm-matching-bracket: var(--auricyn-elements-editor-matchingBracketBackgroundColor, rgb(50 140 130 / 0.3));
+
+  /* Selection */
+
+  --cm-selection-backgroundColorFocused: var(--auricyn-elements-editor-selection-backgroundColor, #42b4ff);
+  --cm-selection-backgroundOpacityFocused: var(--auricyn-elements-editor-selection-backgroundOpacity, 0.3);
+  --cm-selection-backgroundColorBlured: var(--auricyn-elements-editor-selection-inactiveBackgroundColor, #c9e9ff);
+  --cm-selection-backgroundOpacityBlured: var(--auricyn-elements-editor-selection-inactiveBackgroundOpacity, 0.3);
+
+  /* Panels */
+
+  --cm-panels-borderColor: var(--auricyn-elements-editor-panels-borderColor, var(--auricyn-elements-borderColor));
+
+  /* Search */
+
+  --cm-search-backgroundColor: var(--auricyn-elements-editor-search-backgroundColor, var(--cm-backgroundColor));
+  --cm-search-textColor: var(--auricyn-elements-editor-search-textColor, var(--auricyn-elements-textSecondary));
+  --cm-search-closeButton-backgroundColor: var(--auricyn-elements-editor-search-closeButton-backgroundColor, transparent);
+
+  --cm-search-closeButton-backgroundColorHover: var(
+    --auricyn-elements-editor-search-closeButton-backgroundColorHover,
+    var(--auricyn-elements-item-backgroundActive)
+  );
+
+  --cm-search-closeButton-textColor: var(
+    --auricyn-elements-editor-search-closeButton-textColor,
+    var(--auricyn-elements-item-contentDefault)
+  );
+
+  --cm-search-closeButton-textColorHover: var(
+    --auricyn-elements-editor-search-closeButton-textColorHover,
+    var(--auricyn-elements-item-contentActive)
+  );
+
+  --cm-search-button-backgroundColor: var(
+    --auricyn-elements-editor-search-button-backgroundColor,
+    var(--auricyn-elements-item-backgroundDefault)
+  );
+
+  --cm-search-button-backgroundColorHover: var(
+    --auricyn-elements-editor-search-button-backgroundColorHover,
+    var(--auricyn-elements-item-backgroundActive)
+  );
+
+  --cm-search-button-textColor: var(--auricyn-elements-editor-search-button-textColor, var(--auricyn-elements-textSecondary));
+
+  --cm-search-button-textColorHover: var(
+    --auricyn-elements-editor-search-button-textColorHover,
+    var(--auricyn-elements-textPrimary)
+  );
+
+  --cm-search-button-borderColor: var(--auricyn-elements-editor-search-button-borderColor, transparent);
+  --cm-search-button-borderColorHover: var(--auricyn-elements-editor-search-button-borderColorHover, transparent);
+
+  --cm-search-button-borderColorFocused: var(
+    --auricyn-elements-editor-search-button-borderColorFocused,
+    var(--auricyn-elements-borderColorActive)
+  );
+
+  --cm-search-input-backgroundColor: var(--auricyn-elements-editor-search-input-backgroundColor, transparent);
+  --cm-search-input-textColor: var(--auricyn-elements-editor-search-input-textColor, var(--auricyn-elements-textPrimary));
+  --cm-search-input-borderColor: var(--auricyn-elements-editor-search-input-borderColor, var(--auricyn-elements-borderColor));
+
+  --cm-search-input-borderColorFocused: var(
+    --auricyn-elements-editor-search-input-borderColorFocused,
+    var(--auricyn-elements-borderColorActive)
+  );
+
+  /* Tooltip */
+
+  --cm-tooltip-backgroundColor: var(--auricyn-elements-editor-tooltip-backgroundColor, var(--cm-backgroundColor));
+  --cm-tooltip-textColor: var(--auricyn-elements-editor-tooltip-textColor, var(--auricyn-elements-textPrimary));
+
+  --cm-tooltip-backgroundColorSelected: var(
+    --auricyn-elements-editor-tooltip-backgroundColorSelected,
+    theme('colors.alpha.accent.30')
+  );
+
+  --cm-tooltip-textColorSelected: var(
+    --auricyn-elements-editor-tooltip-textColorSelected,
+    var(--auricyn-elements-textPrimary)
+  );
+
+  --cm-tooltip-borderColor: var(--auricyn-elements-editor-tooltip-borderColor, var(--auricyn-elements-borderColor));
+
+  --cm-searchMatch-backgroundColor: var(--auricyn-elements-editor-searchMatch-backgroundColor, rgba(234, 92, 0, 0.33));
+}
+
+html[data-theme='light'] {
+  --auricyn-elements-editor-gutter-textColor: #237893;
+  --auricyn-elements-editor-gutter-activeLineTextColor: var(--auricyn-elements-textPrimary);
+  --auricyn-elements-editor-foldGutter-textColorHover: var(--auricyn-elements-textPrimary);
+  --auricyn-elements-editor-activeLineBackgroundColor: rgb(50 53 63 / 5%);
+  --auricyn-elements-editor-tooltip-backgroundColorSelected: theme('colors.alpha.accent.20');
+  --auricyn-elements-editor-search-button-backgroundColor: theme('colors.gray.100');
+  --auricyn-elements-editor-search-button-backgroundColorHover: theme('colors.alpha.gray.10');
+}
+
+html[data-theme='dark'] {
+  --cm-backgroundColor: var(--auricyn-elements-bg-depth-2);
+  --auricyn-elements-editor-gutter-textColor: var(--auricyn-elements-textTertiary);
+  --auricyn-elements-editor-gutter-activeLineTextColor: var(--auricyn-elements-textSecondary);
+  --auricyn-elements-editor-selection-inactiveBackgroundOpacity: 0.3;
+  --auricyn-elements-editor-activeLineBackgroundColor: rgb(50 53 63 / 50%);
+  --auricyn-elements-editor-foldGutter-textColorHover: var(--auricyn-elements-textPrimary);
+  --auricyn-elements-editor-matchingBracketBackgroundColor: rgba(66, 180, 255, 0.3);
+  --auricyn-elements-editor-search-button-backgroundColor: theme('colors.gray.800');
+  --auricyn-elements-editor-search-button-backgroundColorHover: theme('colors.alpha.white.10');
+}
